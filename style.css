@@ -10,93 +10,128 @@
      Példa: @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
    - Színpaletta generátor: https://coolors.co/
    - CSS referencia: https://developer.mozilla.org/en-US/docs/Web/CSS
+   https://www.w3schools.com/css/
    
    Sok sikert! 🎨
    ============================================ */
-
 
 /* --- GOOGLE FONTS IMPORTÁLÁS ---
    Cseréld ki a saját választásodra!
    -------------------------------- */
 /* @import url('https://fonts.googleapis.com/css2?family=VALASZD+KI&display=swap'); */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* --- ALAP BEÁLLÍTÁSOK --- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    /* Háttérszín */
-    background-color: #ffffff;
-    /* Betűtípus */
-    font-family: sans-serif;
-    /* Betűszín */
-    color: #333333;
-    /* Sormagasság */
-    line-height: 1.6;
+  /* Háttérszín */
+  background-color: #4469bf;
+  background-image: linear-gradient(180deg, rgb(132, 247, 224), rgb(4, 29, 21));
+  /* Betűtípus */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Betűszín */
+  color: #333333;
+  /* Sormagasság */
+  line-height: 1.6;
 }
-
 
 /* --- OLDAL KERET --- */
 .oldal-keret {
-    /* Az egész oldal kerete / szélessége */
+  margin: 50px 10% 100px 10%;
+  border: 5px solid rgb(10, 181, 153);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(194, 238, 211);
+  /* Az egész oldal kerete / szélessége */
 }
-
 
 /* --- FEJLÉC --- */
 .fejlec {
-    /* Háttér, padding, szöveg igazítás */
+  /* Háttér, padding, szöveg igazítás */
 }
 
 .fooldal-cim {
-    /* Főcím stílusa */
+  color: rgb(19, 135, 142);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-weight: 800;
+  font-size: 40px;
+  /* Főcím stílusa */
 }
 
 .kiemeles {
-    /* A "CSS" szó kiemelése a címben */
+  color: rgb(80, 91, 214);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  font-variant: small-caps;
+  font-weight: bold;
+  /* A "CSS" szó kiemelése a címben */
 }
 
 .alcim {
-    /* Alcím stílusa */
+  color: rgb(19, 135, 142);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  font-weight: bold;
+  /* Alcím stílusa */
 }
-
 
 /* --- BEVEZETŐ --- */
 .bevezeto {
-    /* A bevezető szekció háttere, padding-ja */
+  /* A bevezető szekció háttere, padding-ja */
 }
 
 .bevezeto-szoveg p {
-    /* Bevezető bekezdések */
+  /* Bevezető bekezdések */
 }
-
 
 /* --- KÁRTYÁK (a fő tartalom elemei) --- */
 .kartya {
-    /* Háttér, padding, margin, border, border-radius, box-shadow */
+  /* Háttér, padding, margin, border, border-radius, box-shadow */
+  margin: 50px 10% 100px 10%;
+  border: 5px solid rgb(10, 181, 153);
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+  text-align: left;
+  background-color: rgb(242, 245, 246);
+  box-shadow: 10px 10px rgb(157, 186, 196);
 }
 
 .kartya-cim {
-    /* Kártya címek stílusa */
+  /* Kártya címek stílusa */
+  color: rgb(19, 135, 142);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  font-variant: inherit;
+  font-weight: bold;
 }
-
 
 /* --- SZABÁLYOK LISTA --- */
 .szabaly-lista {
-    /* Lista stílus (list-style, padding) */
+  /* Lista stílus (list-style, padding) */
+  writing-mode: horizontal-tb;
+  list-style-type: 20pt;
+  color: rgb(10, 130, 90);
+  padding-left: 5%;
 }
 
 .szabaly {
-    /* Egyes szabály elemek */
+  /* Egyes szabály elemek */
 }
-
 
 /* --- INSPIRÁCIÓ RÁCS --- */
 .inspiracio-racsozat {
-    /* Használj flexbox-ot a 4 elem elrendezéséhez!
+  /* Használj flexbox-ot a 4 elem elrendezéséhez!
        display: flex;
        flex-wrap: wrap;
        gap: ...;
@@ -104,61 +139,58 @@ body {
 }
 
 .inspiracio-elem {
-    /* Egyes inspiráció kártyák */
+  /* Egyes inspiráció kártyák */
 }
 
 .inspiracio-elem h4 {
-    /* Inspiráció alcímek */
+  /* Inspiráció alcímek */
 }
-
 
 /* --- TECHNOLÓGIA BADGE-EK --- */
 .tech-lista {
-    /* Flexbox elrendezés a badge-ekhez */
+  /* Flexbox elrendezés a badge-ekhez */
 }
 
 .tech-badge {
-    /* Kis címkék stílusa: háttér, padding, border-radius */
+  /* Kis címkék stílusa: háttér, padding, border-radius */
 }
-
 
 /* --- OLDALSÁV --- */
 .oldalsav {
-    /* Oldalsáv háttere, pozíciója */
+  /* Oldalsáv háttere, pozíciója */
 }
 
 .oldalsav-cim {
-    /* Oldalsáv címek */
+  /* Oldalsáv címek */
 }
 
 .szerzo-nev {
-    /* Szerző neve — írd át a CSS-ben is ha akarod kiemelni */
+  /* Szerző neve — írd át a CSS-ben is ha akarod kiemelni */
 }
-
 
 /* --- LINKEK --- */
 .link-lista {
-    /* Link lista stílus */
+    list-style-type: value;
+    font-style: italic;
+  /* Link lista stílus */
 }
 
 .kulso-link {
-    /* Link stílus: szín, text-decoration */
+  /* Link stílus: szín, text-decoration */
 }
 
 .kulso-link:hover {
-    /* Hover effekt a linkekre */
+  /* Hover effekt a linkekre */
 }
-
 
 /* --- LÁBLÉC --- */
 .lablec {
-    /* Lábléc háttér, padding, szöveg */
+  /* Lábléc háttér, padding, szöveg */
 }
 
 .lablec-megjegyzes {
-    /* Kis megjegyzés a láblécben */
+  /* Kis megjegyzés a láblécben */
 }
-
 
 /* --- EXTRA: Hover effektek, átmenetek ---
    Próbálj ki transition-öket!
