@@ -121,7 +121,6 @@ body {
 }
 
 .inspiracio-elem {
-  flex: 1;
   padding: 15px 15px 25px 25px;
   background-color: aqua;
   border-radius: 20px;
@@ -146,9 +145,8 @@ body {
 
 .tech-badge {
   border: 1px #ffffff;
-  display: grid;
-  grid-template-rows: 50px 1 fr;
-  place-items: center;
+  display: block;
+  text-align: center;
   margin: 10px;
   padding: 5px;
   border-radius: 10px;
@@ -172,9 +170,8 @@ body {
   box-shadow: 1px -5px 5px aqua;
   color: #ffffff;
   padding: 20px;
-  display: grid;
-  grid-template-columns: 50px 2 fr;
-  place-items: center;
+  display: block;
+  text-align: center;
 }
 
 .oldalsav-cim {
@@ -202,7 +199,6 @@ body {
   align-content: center;
   -webkit-transition: font-size 0.3s ease;
   transition: font-size 0.3s ease;
-  display: inline-flexbox;
   width: 200px;
 }
 
