@@ -1,27 +1,7 @@
-/* ============================================
-   METU CSS KERT — Starter Stíluslap
-   ============================================
-   
-   Ez a te vásznod! Csak ezt a fájlt szerkesztheted.
-   A HTML kódhoz NE NYÚLJ.
-   
-   Tippek:
-   - Használj Google Fonts-ot: https://fonts.google.com/
-     Példa: @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-   - Színpaletta generátor: https://coolors.co/
-   - CSS referencia: https://developer.mozilla.org/en-US/docs/Web/CSS
-   https://www.w3schools.com/css/
-   
-   Sok sikert! 🎨
-   ============================================ */
-
-/* --- GOOGLE FONTS IMPORTÁLÁS ---
-   Cseréld ki a saját választásodra!
-   -------------------------------- */
-/* @import url('https://fonts.googleapis.com/css2?family=VALASZD+KI&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "compass/css3";
 
 
 /* --- ALAP BEÁLLÍTÁSOK --- */
@@ -35,129 +15,85 @@
   color: rgb(30, 30, 30);
 }
 
-.inspiracio-racsozat:p {
-  
-}
 
 body {
-  /* Háttérszín */
   background-color: rgb(30 30 30);
-  /* --- background-image: linear-gradient(180deg, rgb(27, 28, 27), rgb(34, 57, 57)); --- */
-  font-family: "Roboto";
-  /* Betűszín */
+  font-family: "Rubik";
   color: #ffffff;
-  /* Sormagasság */
   line-height: 1.6;
   text-align: center;
   margin: 0;
-  /*border: 5px solid rgb(10, 181, 153);*/
   padding: 0px;
 }
 
 /* --- OLDAL KERET --- */
 .oldal-keret {
-  /*margin: 10px 10% 20px 10%;*/
-  /*border: 5px solid rgb(10, 181, 153);*/
   padding: 0px;
   border-radius: 10px;
-  /*background-color: rgb(194, 238, 211);*/
-  /* Az egész oldal kerete / szélessége */
 }
 
 /* --- FEJLÉC --- */
 .fejlec {
-  /* Háttér, padding, szöveg igazítás */
+
 }
 
 .fooldal-cim {
   color: rgb(30, 30, 30);
-   font-family: "Rubik";
-  font-variant-caps:all-small-caps;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 110px;
+  font-family: "Rubik";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80px;
   text-align: center;
   animation: glow 10s linear infinite;
-  /* Főcím stílusa */
 }
 
 .kiemeles {
-  color: rgb(213, 252, 255);
+  color: #ffffff;
   font-family: "Bungee";
-  font-weight: 800;
   font-size: 100px;
   font-variant: small-caps;
   font-weight: bold;
   animation: glow 10s linear infinite;
-  /* A "CSS" szó kiemelése a címben */
-}
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 5px cornflowerblue,
-    0 0 10px rgb(80, 255, 208), 0 0 15px cornflowerblue,
-  }
-  10% {
-    text-shadow: 0 0 8px rgb(10, 181, 153);
-  }
-  50% {
-    text-shadow: 0 0 5px rgb(47, 203, 255);
-  }
-  75% {
-    text-shadow: 0 0 10px mediumaquamarine ;
-  }
-  100% {
-    text-shadow: 0 0 10px rgb(10, 181, 153);
-  }
 }
 
 .alcim {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-family: "Rubik";
-  font-variant-caps:all-small-caps;
-  font-weight: 600;
-  font-size: 50px;
+  text-transform: uppercase;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
-  padding: 50px 0px 20px 0px;
-  /* Alcím stílusa */
+  padding: 10px 0px 50px 0px;
 }
 
 /* --- BEVEZETŐ --- */
 .bevezeto {
 padding: 5px 5px 50px 5px;
-  /* A bevezető szekció háttere, padding-ja */
 }
 
 .bevezeto-szoveg p {
   text-align: center;
   margin: 20px 25% 0px 25%;
-
-  /* Bevezető bekezdések */
 }
 
 /* --- KÁRTYÁK (a fő tartalom elemei) --- */
 .kartya {
-  /* Háttér, padding, margin, border, border-radius, box-shadow */
-  border: 0px solid rgb(10, 181, 153);
+  border: 0px solid aqua;
   max-width: 600px;
   margin: 50px auto;
   padding: 50px;
   border-radius: 40px;
   text-align: left;
   background-color: rgb(30, 30, 30);
-  box-shadow: 5px 5px 10px rgb(1, 202, 196);
-  
-
+  box-shadow: 5px 5px 10px aqua;
   transition: transform 0.3s ease;
    }
    
 .kartya:hover {
-       transform: scale(1.05);
+  transform: scale(1.05);
    }
   
-
 .kartya-cim {
-  /* Kártya címek stílusa */
   font: 400 40px/1.5 "Rubik";
   text-transform: uppercase;
   font-weight: 600;
@@ -169,7 +105,6 @@ padding: 5px 5px 50px 5px;
 
 /* --- SZABÁLYOK LISTA --- */
 .szabaly-lista {
-  /* Lista stílus (list-style, padding) */
   writing-mode: horizontal-tb;
   list-style-type: 20pt;
   color: rgb(255, 255, 255);
@@ -181,15 +116,12 @@ padding: 5px 5px 50px 5px;
 }
 
 
-
 /* --- INSPIRÁCIÓ RÁCS --- */
-
   .inspiracio-racsozat {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding-top: 30px;
-    
 }
 
 .inspiracio-elem {
@@ -200,23 +132,16 @@ padding: 5px 5px 50px 5px;
     margin: 10px auto;
   
 }
-  /* Használj flexbox-ot a 4 elem elrendezéséhez!
-       display: flex;
-       flex-wrap: wrap;
-       gap: ...;
-    */
-
 
 .inspiracio-elem {
   /* Egyes inspiráció kártyák */
 }
 
 .inspiracio-elem h4 {
-  /* Inspiráció alcímek */
-  font: 400 40px/1.5 "Rubik";
-  font-variant-caps:all-small-caps;
-  font-weight: 600;
-  font-size: 30px;
+  font: "Rubik";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* --- TECHNOLÓGIA BADGE-EK --- */
@@ -225,20 +150,44 @@ padding: 5px 5px 50px 5px;
 }
 
 .tech-badge {
-  /* Kis címkék stílusa: háttér, padding, border-radius */
+  border: 1px #ffffff;
+  display: grid;
+  grid-template-rows: 50px 1 fr;
+  place-items: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: dashed;
+  color: aqua;
+  font: "Rubik";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tech-badge:hover {
+color: rgb(147, 71, 219);
 }
 
 /* --- OLDALSÁV --- */
 .oldalsav {
-  /* Oldalsáv háttere, pozíciója */
+  padding: 50px 50px 50px 50px;
+  background-image: linear-gradient(180deg, rgb(27, 28, 27), rgb(34, 57, 57));
+  margin: 0;
+  box-shadow:  1px -5px  5px aqua;
+  color: #ffffff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50px 2 fr;
+  place-items: center;
 }
 
 .oldalsav-cim {
-  /* Oldalsáv címek */
+  font-size: 30px;
+  padding: 30px;
 }
 
 .szerzo-nev {
-  /* Szerző neve — írd át a CSS-ben is ha akarod kiemelni */
   padding-bottom: 20px;
 }
 
@@ -247,34 +196,24 @@ padding: 5px 5px 50px 5px;
   list-style-type: none;
   padding-bottom: 50px;
   padding-top: 10px;
-  /* Link lista stílus */
 }
 
 .kulso-link {
-  font: 200 20px/1.5 "Rubik";
+  font: "Rubik";
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   color: aqua;
   align-content: center;
-
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-  transition: font-size 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
   display: inline-flexbox;
   width: 200px;
-
-  /* Link stílus: szín, text-decoration */
 }
 
 .kulso-link:hover {
-  font-size: 30px;
-  /* Hover effekt a linkekre */
+  font-size: 20px;
 }
-
-
-@import "compass/css3";
 
 
 /* --- LÁBLÉC --- */
@@ -283,22 +222,27 @@ padding: 5px 5px 50px 5px;
   background-image: linear-gradient(180deg, rgb(27, 28, 27), rgb(34, 57, 57));
   margin: 0;
   box-shadow:  1px -5px  5px aqua;
-
-  /* Lábléc háttér, padding, szöveg */
 }
 
 .lablec-megjegyzes {
   font-size: 10px;
-  /* Kis megjegyzés a láblécben */
 }
 
-/* --- EXTRA: Hover effektek, átmenetek ---
-   Próbálj ki transition-öket!
-   Példa:
-   .kartya {
-       transition: transform 0.3s ease;
-   }
-   .kartya:hover {
-       transform: scale(1.02);
-   }
-   ---------------------------------------- */
+  @keyframes glow {
+  0% {
+    text-shadow: 0 0 5px aqua,
+    0 0 10px aqua, 0 0 15px aqua,
+  }
+  10% {
+    text-shadow: 0 0 8px aqua;
+  }
+  50% {
+    text-shadow: 0 0 5px aqua;
+  }
+  75% {
+    text-shadow: 0 0 10px aqua;
+  }
+  100% {
+    text-shadow: 0 0 10px aqua;
+  }
+}
