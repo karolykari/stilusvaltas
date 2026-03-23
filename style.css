@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "compass/css3";
-
 
 /* --- ALAP BEÁLLÍTÁSOK --- */
 * {
@@ -14,7 +13,6 @@
 .inspiracio-elem:hover {
   color: rgb(30, 30, 30);
 }
-
 
 body {
   background-color: rgb(30 30 30);
@@ -34,7 +32,6 @@ body {
 
 /* --- FEJLÉC --- */
 .fejlec {
-
 }
 
 .fooldal-cim {
@@ -68,7 +65,7 @@ body {
 
 /* --- BEVEZETŐ --- */
 .bevezeto {
-padding: 5px 5px 50px 5px;
+  padding: 5px 5px 50px 5px;
 }
 
 .bevezeto-szoveg p {
@@ -87,12 +84,12 @@ padding: 5px 5px 50px 5px;
   background-color: rgb(30, 30, 30);
   box-shadow: 5px 5px 10px aqua;
   transition: transform 0.3s ease;
-   }
-   
+}
+
 .kartya:hover {
   transform: scale(1.05);
-   }
-  
+}
+
 .kartya-cim {
   font: 400 40px/1.5 "Rubik";
   text-transform: uppercase;
@@ -115,22 +112,20 @@ padding: 5px 5px 50px 5px;
   /* Egyes szabály elemek */
 }
 
-
 /* --- INSPIRÁCIÓ RÁCS --- */
-  .inspiracio-racsozat {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding-top: 30px;
+.inspiracio-racsozat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 30px;
 }
 
 .inspiracio-elem {
-    flex: 1;
-    padding: 15px 15px 25px 25px;
-    background-color: aqua;
-    border-radius: 20px;
-    margin: 10px auto;
-  
+  flex: 1;
+  padding: 15px 15px 25px 25px;
+  background-color: aqua;
+  border-radius: 20px;
+  margin: 10px auto;
 }
 
 .inspiracio-elem {
@@ -166,7 +161,7 @@ padding: 5px 5px 50px 5px;
 }
 
 .tech-badge:hover {
-color: rgb(147, 71, 219);
+  color: rgb(147, 71, 219);
 }
 
 /* --- OLDALSÁV --- */
@@ -174,7 +169,7 @@ color: rgb(147, 71, 219);
   padding: 50px 50px 50px 50px;
   background-image: linear-gradient(180deg, rgb(27, 28, 27), rgb(34, 57, 57));
   margin: 0;
-  box-shadow:  1px -5px  5px aqua;
+  box-shadow: 1px -5px 5px aqua;
   color: #ffffff;
   padding: 20px;
   display: grid;
@@ -215,23 +210,24 @@ color: rgb(147, 71, 219);
   font-size: 20px;
 }
 
-
 /* --- LÁBLÉC --- */
 .lablec {
   padding: 50px 50px 50px 50px;
   background-image: linear-gradient(180deg, rgb(27, 28, 27), rgb(34, 57, 57));
   margin: 0;
-  box-shadow:  1px -5px  5px aqua;
+  box-shadow: 1px -5px 5px aqua;
 }
 
 .lablec-megjegyzes {
   font-size: 10px;
 }
 
-  @keyframes glow {
+@keyframes glow {
   0% {
-    text-shadow: 0 0 5px aqua,
-    0 0 10px aqua, 0 0 15px aqua,
+    text-shadow:
+      0 0 5px aqua,
+      0 0 10px aqua,
+      0 0 15px aqua;
   }
   10% {
     text-shadow: 0 0 8px aqua;
