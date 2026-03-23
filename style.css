@@ -138,14 +138,15 @@ padding: 5px 5px 50px 5px;
 /* --- KÁRTYÁK (a fő tartalom elemei) --- */
 .kartya {
   /* Háttér, padding, margin, border, border-radius, box-shadow */
-  margin: 50px 25% 50px 25%;
   border: 0px solid rgb(10, 181, 153);
-  padding: 30px 30px 60px 60px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px;
   border-radius: 40px;
   text-align: left;
   background-color: rgb(30, 30, 30);
   box-shadow: 5px 5px 10px rgb(1, 202, 196);
-  box-sizing: 20% content-box;
+  
 
   transition: transform 0.3s ease;
    }
@@ -158,11 +159,11 @@ padding: 5px 5px 50px 5px;
 .kartya-cim {
   /* Kártya címek stílusa */
   font: 400 40px/1.5 "Rubik";
-  font-variant-caps:all-small-caps;
+  text-transform: uppercase;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
   color: aqua;
 }
 
@@ -187,13 +188,16 @@ padding: 5px 5px 50px 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding-top: 30px;
+    
 }
 
 .inspiracio-elem {
-    flex: 2 2;
+    flex: 1;
     padding: 15px 15px 25px 25px;
     background-color: aqua;
     border-radius: 20px;
+    margin: 10px auto;
   
 }
   /* Használj flexbox-ot a 4 elem elrendezéséhez!
